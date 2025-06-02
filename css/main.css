@@ -33,8 +33,11 @@ html{
 
 .logo h1{
     cursor: pointer;
-      font-family: "PT Serif", serif;
       font-weight: 900;
+        font-family: "Ancizar Serif", serif;
+        font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
 
 .logo h1 span{
@@ -936,34 +939,49 @@ position: relative;
 bottom: 10px;
 z-index: 10;
 padding: 0;
-    gap: 50px;
+    gap: 20px;
     justify-self: left;
-}
-
-.bottom-left i {
-    padding: 10px;
-width: 12vw;
-    border-radius: 100px;
-}
-
-.bottom-rigth {
-    display: grid
-;
-    gap: 5px;
-}
-
-.bottom-rigth i {
-    padding: 10px;
-width: 12vw;
-    border-radius: 100px;
+    margin-bottom: 10px;
 }
 
 .bottom-left
  {
-    display: grid
+    display: flex
 ;
-    gap: 5px;
+flex-direction: column;
+    gap: 0px;
 }
+
+
+.bottom-left i {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 3rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+
+
+.bottom-rigth {
+     display: flex
+;
+flex-direction: column;
+    gap: 0px;
+}
+
+.bottom-rigth i {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 3rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
 
 #hero {
     display: flex;
@@ -978,13 +996,24 @@ width: 12vw;
 }
 
 .left {
-    width: 100%;
+    width: 90%;
     position: relative;
     top: 0px;
+    padding: 5px;
+}
+
+.left h3 {
+    margin-bottom: 10px;
+    font-size: 15px;
 }
 
 .left h1 {
-    font-size: 40px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.left p{
+  font-size: 15px;
 }
 
 .rigth img {
@@ -993,7 +1022,7 @@ width: 12vw;
 }
 
 #hero img {
-width: 95%;
+width: 100%;
 }
 
 #more_ways {
@@ -1001,54 +1030,63 @@ width: 95%;
     padding-top: 30px;
     padding-bottom: 30px;
     gap: 20px;
-}
+  }
 
 #more_ways h3 {
-font-size: 20px;
+font-size: 15px;
 }
 #more_ways .ways {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 900;
 }
 
 .bottom {
-    display: grid;
-    gap: 5px;
-    justify-self: center;
+    display: flex
+;
+flex-direction: column;
+    gap: 50px;
+    margin-top: 20px;
+    line-height: 20px;
 }
 
 .buttom_left {
-    padding: 10px;
+    padding: 0px;
     width: auto;
-    justify-self: center;
     border-radius: 10px;
 }
 
 .bottom-left_container {
-    display: grid;
-    gap: 30px;
+    display: flex
+;
+flex-direction: column;
+    gap: 20px;
     width: 50vw;
-}
-
-.bottom-left_container {
-  text-align: center;
-}
-
-.bottom-left_container span {
-    display: grid;
-    gap: 0px;
+    text-align: center;
 }
 
 .bottom-left_container i {
-    padding: 8px;
-    border-radius: 200px;
-    color: white;
+    font-size: 25px;
     position: relative;
-    top: 10px;
+    top: 0px;
 }
+
+.bottom-left_container span {
+    gap: 0px;
+}
+
+.bottom-left_container span h1{
+   font-size: 20px;
+}
+
+.bottom-left_container span p{
+   font-size: 15px;
+   line-height: 22px;
+}
+
 
 .about {
     padding: 0px;
+    overflow: hidden;
 }
 
 #about {
@@ -1059,10 +1097,13 @@ font-size: 20px;
     margin: 0 auto;
 }
 
+br{
+  display: none;
+}
+
 .about-left img {
-    border-radius: 5px;
+    border-radius: 0px;
     width: 100vw;
-    overflow: hidden;
 }
 
 .about-left .style {
@@ -1097,6 +1138,7 @@ display: none;
     font-weight: 360;
     display: flex
 ;
+font-size: 15px;
     gap: 5px;
     justify-self: center;
     letter-spacing: 1px;
@@ -1108,22 +1150,44 @@ display: none;
 }
 
 .about-rigth h1 {
-    font-size: 30px;
+    font-size: 20px;
     color: rgb(3, 3, 66);
+}
+
+.about-rigth p
+ {
+    margin-top: 10px;
+   font-size: 15px;
+   line-height: 21px;
 }
 
 .flex
  {
     display: grid
 ;
-    gap: 25px;
+    gap: 18px;
     margin-bottom: 25px;
+}
+
+.flex h5
+ {
+    font-size: 15px;
 }
 
 .flex hr {
     height: 0vh;
 }
 
+.good p{
+  margin-top: 0px;
+  line-height: 10px;
+}
+
+.about-button button
+ {
+    padding: 10px 30px;
+    border-radius: 20px;
+}
 
 /* services */
 .service {
@@ -1132,6 +1196,8 @@ display: none;
     padding-bottom: 100px;
     justify-self: center;
     margin-top: 40px;
+    overflow: hidden;
+    background-color: transparent;
 }
 
 #services {
@@ -1140,8 +1206,13 @@ display: none;
     gap: 10px;
 }
 
+#services h3 {
+    font-size: 15px;
+    gap: 5px;
+}
+
 #services h1 {
-    font-size: 33px;
+    font-size: 20px;
 }
 
 #services br {
@@ -1154,8 +1225,8 @@ display: none;
     justify-content: center;
     gap: 5px;
     border: 1px solid #00205b44;
-    width: 330px;
-    padding: 40px;
+    width: 300px;
+    padding: 0px;
     padding-bottom: 50px;
     text-align: center;
     border-radius: 10px;
@@ -1177,6 +1248,15 @@ display: none;
     height: 25vh;
 }
 
+.center h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.center p {
+    font-size: 15px;
+}
+
 #this{
   display: none;
 }
@@ -1194,14 +1274,35 @@ display: none;
     font-size: 15px;
     position: relative;
     top: 50px;
+    border-radius: 50px;
 }
 
-/* projects */
+
+
+
 #projects {
     display: none;
 }
 
 /* customers */
+#satified{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.satisfied-top h3
+ {
+font-size: 15px;
+gap: 5px;
+margin-bottom: 5px;
+}
+
+.satisfied-top h1
+ {
+font-size: 20px;
+}
+
+
 .client {
     background-color: #f1f6fa;
     padding: 0px;
@@ -1213,19 +1314,18 @@ display: none;
 }
 
 .satisfied-bottom {
-    justify-self: center;
-    display:block
-;
-    margin-top: 50px;
-   flex-direction: row;
-    gap: 30px;
+    margin-top: 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .child {
     width: 90vw;
     margin-bottom: 50px;
-    display: grid
+    display: flex
 ;
+flex-direction: column;
 }
 
 .child h3 svg {
@@ -1274,27 +1374,38 @@ display: none;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding: 40px;
+    gap: 10px;
+    padding: 30px;
 }
 
 .foot1 .logo {
- margin-bottom: 30px;
+ margin-bottom: 20px;
+ width: 40vw;
 }
 
 .foot1 ul {
 margin-bottom: 30px;
 }
 
+.foot1 .active
+ {
+  font-size: 10px;
+}
+
+.foot_contact li a {
+    font-size: 15px;
+}
+
 .foot2 {
     display: grid
 ;
-    padding: 30px;
+    padding: 10px;
     text-align: c;
 }
 .foot2 h3 {
     transform: translate(0%);
     text-align: center;
+    font-size: 10px;
 }
 
 .foot2 a {
