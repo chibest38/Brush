@@ -35,9 +35,17 @@ html{
     gap: 280px;
     padding: 15px;
   }
-
-.logo{
+.logo h1{
     cursor: pointer;
+      font-weight: 900;
+        font-family: "Ancizar Serif", serif;
+        font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.logo h1 span{
+color: blue;
 }
 
   nav ul{
@@ -596,6 +604,11 @@ flex-direction: column;
     top: 0px;
 }
 
+#hero .left h3 {
+    gap: 5px;
+    font-size: 15px;
+}
+
 #hero .right img {
     border-radius: 10px;
     width: 90vw;
@@ -607,14 +620,19 @@ flex-direction: column;
 
 .left h1 {
     color: #00205b;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 750;
-    height: 17vh;
+    height: 4vh;
+}
+
+.left p {
+    line-height: 21px;
+    font-size: 15px;
 }
 
 .about {
     padding: 0px;
-    width: 100vw;
+    width: 94.5vw;
     overflow: hidden;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -636,6 +654,24 @@ flex-direction: column-reverse;
     padding: 10px;
 }
 
+.about-rigth h3 {
+    font-size: 15px;
+    gap: 5px;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+}
+
+.about-rigth h1 {
+    font-size: 20px;
+}
+
+.about-rigth p {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
 .about-left img {
     border-radius: 30px;
     width:100vw;
@@ -647,7 +683,7 @@ flex-direction: column-reverse;
     background-color: #00205b;
     color: white;
     position: relative;
-    width: 50vw;
+    width: 60vw;
     bottom: 70px;
     left: 30px;
     border-radius: 10px;
@@ -659,8 +695,15 @@ flex-direction: column-reverse;
     padding-bottom: 50px;
 }
 
+.about-cen h3 {
+    font-size: 15px;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
 .about-cen h1 {
-    font-size: 30px;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .doors {
@@ -676,14 +719,24 @@ flex-direction: column;
     display: flex
 ;
     gap: 25px;
-    width: 90vw;
+    width: 80vw;
+    height: 25vh;
   }
+
 
   .goods .easy {
     position: relative;
     top: 10px;
     color: #031538;
     width: 50vw;
+}
+
+.goods h2 {
+    font-size: 20px;
+}
+
+.goods p {
+    line-height: 21px;
 }
 
 .foot-hero {
@@ -723,195 +776,41 @@ display: none;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding: 40px;
+    gap: 10px;
+    padding: 30px;
 }
 
 .foot1 .logo {
- margin-bottom: 30px;
+ margin-bottom: 20px;
+ width: 40vw;
 }
 
 .foot1 ul {
 margin-bottom: 30px;
 }
 
+.foot1 .active
+ {
+  font-size: 10px;
+}
+
+.foot_contact li a {
+    font-size: 15px;
+}
+
 .foot2 {
     display: grid
 ;
-    padding: 30px;
+    padding: 10px;
     text-align: c;
 }
 .foot2 h3 {
     transform: translate(0%);
     text-align: center;
+    font-size: 10px;
 }
 
 .foot2 a {
 display: none;
-}
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-nav {
-    display: flex
-;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 0px;
-    justify-content: space-between;
-    padding: 25px;
-}
-
-nav ul {
-    display: flex
-;
-    gap: 60px;
-    display: none;
-}
-
-nav button{
-  display: none;
-}
-
-#hero {
-    display: flex
-;
-justify-content: space-between;
-padding: 10px;
-    gap: 0px;
-    position: relative;
-    left: 0px;
-}
-
-.left {
-    width: 100%;
-    position: relative;
-    top: 0px;
-    left: 20px;
-}
-
-.rigth img {
-    position: relative;
-    top: 30px;
-    width: 50vw;
-}
-
-br{
-  display: none;
-}
-
-#hero .left {
-    width: auto;
-    position: relative;
-    top: 80px;
-}
-
-.left h1 {
-    color: #00205b;
-    font-size: 80px;
-    font-weight: 900;
-    height: auto;
-    font-weight: bold;
-}
-
-#hero .right img {
-    border-radius: 10px;
-    width: 50vw;
-    height: 50vh;
-}
-
-.about {
-    padding: 0px;
-    width: 100%;
-        padding-top: 50px;
-    padding-bottom: 50px;
-    justify-self: center;
-    background-color: #f1f6fa;
-}
-
-#about {
-    display: flex
-;
-    gap: 20px;
-    justify-self: center;
-    margin: 0 auto;
-    padding: 10px;
-}
-
-.about-rigth
- {
-    width: 60vw;
-}
-
-.about-left .style
- {
-    padding: 10px;
-    background-color: #00205b;
-    color: white;
-    position: relative;
-    width: 30vw;
-    bottom: 90px;
-    left: 30px;
-    height: 10vh;
-    border-radius: 10px;
-}
-
-.about-cen {
-    background-color: #00205b;
-    color: white;
-    padding: 0px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.about-cen h1 {
-    font-size: 40px;
-}
-
-.doors {
-    gap: 10px;
-    padding: 0px;
-}
-
-.goods
- {
-    display: flex
-;
-    gap: 25px;
-    overflow: hidden;
-    width: 34vw;
-    border-radius: 15px;
-    height: 25vh;
-    background-color: white;
-}
-
-.goods .easy
- {
-    position: relative;
-    top: 30px;
-    color: #031538;
-    width: 22vw;
-}
-
-.foot-hero
- {
-    margin-top: 50px;
-}
-
-.footer_hero {
-    padding: 100px;
-}
-
-.foot1 {
-    gap: 100px;
-    padding: 20px;
-}
-
-.foot2 {
-    padding: 20px;
-}
-
-.foot2 h3 {
-    transform: translate(0%);
 }
 }

@@ -30,8 +30,17 @@ html{
     padding: 15px;
   }
 
-.logo{
+.logo h1{
     cursor: pointer;
+      font-weight: 900;
+        font-family: "Ancizar Serif", serif;
+        font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.logo h1 span{
+color: blue;
 }
 
   nav ul{
@@ -497,11 +506,16 @@ flex-direction: column;
     z-index: 10;
 }
 
+#hero .left h3 {
+    font-size: 15px;
+    gap: 5px;
+}
+
 .left h1 {
     color: #00205b;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 750;
-    height: 17vh;
+    height: 3vh;
 }
 
 .contact_form {
@@ -524,9 +538,14 @@ flex-direction: column;
 }
 
 .right {
-    width: 90vw;
+    width: 95vw;
 padding: 10px;
     gap: 20px;
+    overflow: hidden;
+}
+
+.right h1 {
+    font-size: 20px;
 }
 
 .right img
@@ -539,11 +558,18 @@ padding: 10px;
     margin-bottom: 30px;
 }
 
+#more_ways h3 {
+    font-size: 15px;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
 #more_ways .ways
  {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bolder;
 }
+
 
 .bottom-left_container
  {
@@ -561,8 +587,16 @@ flex-direction: column;
 }
 
 .buttom_left {
-    padding: 30px;
-    width: 80vw;
+    padding: 20px;
+    width: 90vw;
+}
+
+.bottom-left_container i {
+    font-size: 15px;
+}
+
+.bottom-left_container span {
+    gap: 5px;
 }
 
 .foot-hero {
@@ -602,27 +636,38 @@ display: none;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding: 40px;
+    gap: 10px;
+    padding: 30px;
 }
 
 .foot1 .logo {
- margin-bottom: 30px;
+ margin-bottom: 20px;
+ width: 40vw;
 }
 
 .foot1 ul {
 margin-bottom: 30px;
 }
 
+.foot1 .active
+ {
+  font-size: 10px;
+}
+
+.foot_contact li a {
+    font-size: 15px;
+}
+
 .foot2 {
     display: grid
 ;
-    padding: 30px;
+    padding: 10px;
     text-align: c;
 }
 .foot2 h3 {
     transform: translate(0%);
     text-align: center;
+    font-size: 10px;
 }
 
 .foot2 a {

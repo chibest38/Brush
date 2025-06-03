@@ -30,8 +30,18 @@ html{
     padding: 15px;
   }
 
-.logo{
+.logo h1{
     cursor: pointer;
+      font-weight: 900;
+        font-family: "Ancizar Serif", serif;
+        font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+.logo h1 span{
+color: blue;
 }
 
   nav ul{
@@ -218,6 +228,10 @@ main{
     position: relative;
     bottom: 50px;
     border-radius: 5px;
+}
+
+.pics{
+  width:30vw ;
 }
 
 .box h3{
@@ -459,11 +473,16 @@ flex-direction: column;
     z-index: 10;
 }
 
+#hero .left h3 {
+font-size: 15px;
+    gap: 5px;
+}
+
 .left h1 {
     color: #00205b;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 750;
-    height: 17vh;
+    height: 3vh;
 }
 
 .services
@@ -471,7 +490,7 @@ flex-direction: column;
     display: flex
 ;
   flex-direction: column;
-    gap: 50px;
+    gap: 40px;
     justify-content: center;
 }
 
@@ -479,7 +498,7 @@ flex-direction: column;
     display: grid
 ;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     border: 1px solid #00205b44;
     width: 90vw;
     padding: 25px;
@@ -488,16 +507,24 @@ flex-direction: column;
 .box img
  {
     position: relative;
-    bottom: 50px;
+    bottom: 30px;
     border-radius: 5px;
     width: 80vw;
+}
+
+.box h3 {
+    font-size: 20px;
+}
+
+.box p {
+    font-size: 15px;
 }
 
 .box button {
    text-align: center;
     top: 0px;
-    padding: 15px 10px;
-    width:70%;
+    padding: 10px 5px;
+    width:60%;
 
 }
 
@@ -538,27 +565,38 @@ display: none;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding: 40px;
+    gap: 10px;
+    padding: 30px;
 }
 
 .foot1 .logo {
- margin-bottom: 30px;
+ margin-bottom: 20px;
+ width: 40vw;
 }
 
 .foot1 ul {
 margin-bottom: 30px;
 }
 
+.foot1 .active
+ {
+  font-size: 10px;
+}
+
+.foot_contact li a {
+    font-size: 15px;
+}
+
 .foot2 {
     display: grid
 ;
-    padding: 30px;
+    padding: 10px;
     text-align: c;
 }
 .foot2 h3 {
     transform: translate(0%);
     text-align: center;
+    font-size: 10px;
 }
 
 .foot2 a {
