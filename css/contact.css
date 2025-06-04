@@ -93,7 +93,7 @@ color: blue;
 
   .nav_btn button:hover{
     background-color: #cf2e2e;
-    cursor: pointer;
+    cursor:not-allowed;
   }
 
 
@@ -330,7 +330,7 @@ margin-top: 150px;
   border-radius: 5px;
   position: relative;
   top: 40px;
-  cursor: pointer;
+  cursor:not-allowed;
 }
 
 .footer_hero button:hover{
@@ -697,47 +697,40 @@ nav button{
   display: none;
 }
 
-#hero {
-    display: flex
-;
-justify-content: space-between;
-padding: 10px;
-    gap: 0px;
-    position: relative;
-    left: 0px;
-}
-
-.rigth img {
-    position: relative;
-    top: 30px;
-    width: 50vw;
-}
-
 br{
   display: none;
 }
 
+#hero {
+    display: flex
+;
+    justify-content: center;
+    gap: 0px;
+    padding: 10px;
+}
+
 #hero .left {
-    width: auto;
+    width: 50vw;
     position: relative;
-    top: 80px;
+    top: 0px;
 }
 
 
 #hero .right img {
     border-radius: 10px;
-    width: 65vw;
-    height: 50vh;
+    width: 50vw;
+    height: 28vh;
 }
 
 
 .left h1 {
     color: #00205b;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 900;
-    height: auto;
+    height: 8vh;
     font-weight: bold;
 }
+
 
 .right {
     width: auto;
@@ -747,7 +740,7 @@ br{
 }
 
 .left {
-    width: 50vw;
+    width: 60vw;
     background: white;
     border-radius: 10px;
     box-shadow: 10px 5px 10px 5px solid black;
@@ -755,26 +748,46 @@ br{
 
 .contact_form {
     background-color: #f1f6fa;
-    padding: 150px;
+    padding-top: 150px;
     display: flex
 ;
     position: relative;
     bottom: 150px;
     justify-content: center;
-    gap: 10px;
+    gap: 50px;
 }
 
 .left form {
-    display: grid
+    display: flex
 ;
+flex-direction: column;
 gap: 10px;
+width: 50vw;
+}
+
+.left form textarea
+ {
+    height: 8vh;
+}
+
+.left form input {
+    height: 3vh;
+    outline: none;
+    border: 0.1px solid gray;
+    border-radius: 5px;
+}
+
+.person{
+  width: 40vw;
+  position: relative;
+  bottom:30px;
 }
 
 
 #more_ways {
     display: grid
 ;
-    gap: 30px;
+    gap: 20px;
 }
 
 #more_ways .ways
@@ -782,12 +795,19 @@ gap: 10px;
     font-size: 30px;
 }
 
+.bottom {
+    display: flex
+;
+    gap: 10px;
+}
+
 .buttom_left
  {
     border: 1px solid #00205b44;
-    padding: 30px;
-    width: 35vw;
-    height: 15vh;
+    padding: 10px;
+    width: 32vw;
+    flex-wrap: wrap;
+    height: 7.5vh;
     border-radius: 10px;
 }
 
@@ -795,7 +815,7 @@ gap: 10px;
     display: flex
 ;
     gap: 20px;
-    width: 30vw;
+    width: auto;
 }
 
 .foot-hero
@@ -820,4 +840,22 @@ gap: 10px;
     transform: translate(0%);
 }
 
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+  .bottom-left_container span h1 {
+    font-size: 20px;
+}
+  .bottom-left_container span p {
+    font-size: 10px;
+}
+
+    .buttom_left {
+        width: 30vw;
+    }
+
+    .foot1 {
+        gap: 50px;
+        padding: 20px;
+    }
 }

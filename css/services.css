@@ -94,7 +94,7 @@ color: blue;
 
   .nav_btn button:hover{
     background-color: #cf2e2e;
-    cursor: pointer;
+       cursor:not-allowed;
   }
 
 
@@ -183,7 +183,7 @@ color: blue;
       border-radius: 5px;
       position: relative;
       top: 40px;
-      cursor: pointer;
+          cursor:not-allowed;
     }
     
     .footer_hero button:hover{
@@ -259,7 +259,7 @@ main{
   
  .box button:hover{
     background-color: #cf2e2e;
-    cursor: pointer;
+        cursor:not-allowed;
   }
 
 
@@ -301,7 +301,7 @@ main{
       border-radius: 5px;
       position: relative;
       top: 40px;
-      cursor: pointer;
+         cursor:not-allowed;
     }
     
     .footer_hero button:hover{
@@ -627,23 +627,6 @@ nav button{
   display: none;
 }
 
-#hero {
-    display: flex
-;
-justify-content: space-between;
-padding: 10px;
-    gap: 0px;
-    position: relative;
-    left: 0px;
-}
-
-.left {
-    width: 100%;
-    position: relative;
-    top: 0px;
-    left: 20px;
-}
-
 .rigth img {
     position: relative;
     top: 30px;
@@ -654,31 +637,37 @@ br{
   display: none;
 }
 
+#hero {
+    gap: 60px;
+    padding: 0px;
+}
+
 #hero .left {
-    width: auto;
+    width: 40%;
     position: relative;
     top: 80px;
 }
 
-.left h1 {
-    color: #00205b;
-    font-size: 60px;
-    font-weight: 900;
-    height: auto;
-    font-weight: bold;
-}
-
 #hero .right img {
-    border-radius: 10px;
     width: 50vw;
-    height: 50vh;
+    height: 30vh;
 }
 
+.left h1 {
+    height: 6vh;
+    font-size: 40px;
+}
+
+main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 30px;
+}
 .services {
     display: grid
 ;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 70px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
     justify-content: center;
 }
 
@@ -686,22 +675,22 @@ br{
     display: grid
 ;
     justify-content: center;
-    gap: 20px;
+    gap: 0px;
     border: 1px solid #00205b44;
-    width: 95vw;
+    width: 45vw;
     padding: 25px;
     border-radius: 10px;
 }
 
 .box img {
     position: relative;
-    bottom: 50px;
-    width: 90vw;
+    bottom: 30px;
+    width: 40vw;
     border-radius: 5px;
 }
 
 .box button {
-    width: 25%;
+    width: 50%;
 }
 
 .foot-hero
@@ -725,5 +714,25 @@ br{
 .foot2 h3 {
     transform: translate(0%);
 }
+}
 
+@media (min-width: 769px) and (max-width: 900px) {
+    .left h1 {
+        height: 9vh;
+        font-size: 40px;
+    }
+
+    .left p {
+      position: relative;
+      top: 25px;
+    }
+
+        .box button {
+        width: 60%;
+    }
+
+    .foot1 {
+        gap: 50px;
+        padding: 20px;
+    }
 }

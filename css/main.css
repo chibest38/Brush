@@ -90,11 +90,11 @@ color: blue;
  border: none;
  border-radius: 5px;
  font-size: 18px;
+    cursor:not-allowed;
   }
 
   .nav_btn button:hover{
     background-color: #cf2e2e;
-    cursor: pointer;
   }
 
 /*   my hero section */
@@ -142,6 +142,7 @@ margin-bottom: 25px;
     background-color:#e7194f;
     border: none;
     padding: 15px 40px;
+    cursor:not-allowed;
     font-size: 15px;
     color: white;
     text-align: left;
@@ -728,8 +729,9 @@ font-weight: 340;
     color: white;
     border-radius: 5px;
     position: relative;
+    cursor:not-allowed;
     top: 40px;
-    cursor: pointer;
+        cursor:not-allowed;
   }
   
   .footer_hero button:hover{
@@ -1423,6 +1425,7 @@ nav {
     gap: 0px;
     justify-content: space-between;
     padding: 25px;
+    padding-inline: 2rem;
 }
 
 nav ul {
@@ -1453,10 +1456,31 @@ padding: 10px;
     left: 20px;
 }
 
+
 .rigth img {
     position: relative;
     top: 30px;
     width: 50vw;
+}
+
+.bottom-left i {
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 3rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+  }
+
+  .bottom-rigth i {
+         display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 3rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
 }
 
 br{
@@ -1474,6 +1498,7 @@ flex-direction: column;
     gap: 0;
     color: white;
     text-align: center;
+    overflow: hidden;
     justify-content: center;
 }
 
@@ -1521,27 +1546,24 @@ flex-direction: column;
     padding: 0px;
     padding-top: 50px;
     padding-bottom: 50px;
-    justify-self: center;
-    
+    justify-self: center;    
 }
 
 #about {
     display:flex
 ;
-flex-direction: column;
-    gap: 0px;
+    gap: 10px;
     justify-self: center;
-    margin: 0 1;
+    margin: 0;
 }
 
 .about-left img {
-  width: 80vw;
+  width: 45vw;
+  height: 20vh;
 }
 
 .about-left .style {
-    padding: 2px;
-    display: block;
-    width: 60vw;
+    display: none;
 }
 
 .flex {
@@ -1551,7 +1573,15 @@ flex-direction: column;
 }
 
 .about-rigth {
-    width: 100vw;
+    width: 50vw;
+    height: 30vh;
+    overflow:scroll;
+    overflow-x: hidden;
+}
+
+.about-rigth h1 {
+    font-size: 30px;
+    color: rgb(3, 3, 66);
 }
 
 .flex hr {
@@ -1614,8 +1644,8 @@ br{
 
 #services button {
     padding: 0px 0px;
-    width: 30vw;
-    height: 6vh;
+    width: 25vw;
+    height: 3vh;
     margin-top: 0px;
 }
 
@@ -1646,19 +1676,26 @@ br{
 .client {
     background-color: #f1f6fa;
     padding: 10px;
-    padding-top: 100px;
+    padding-top: 0px;
     padding-bottom: 100px;
 }
 
+.satisfied-top h1 {
+    font-size: 30px;
+}
+
 .satisfied-bottom {
-    margin-top: 40px;
-    gap: 10px;
+    display: grid
+;
+    margin-top: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
 }
 
 .child {
-    width: 34vw;
-    gap: 10px;
-    height: 35vh;
+    width: 40vw;
+    gap: 0px;
+    height: 18vh;
     padding:10px;
 }
 
@@ -1689,3 +1726,4 @@ br{
     transform: translate(0%);
 }
 }
+
