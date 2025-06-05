@@ -2,56 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>necglows.com</title>
-    <!-- 
-    <link rel="icon" href="/img/header-logo.svg"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="icon" href="/img/fab-icon.webp" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="/css/contact.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Rubik+Gemstones&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif&family=Rubik+Gemstones&display=swap" rel="stylesheet"/>
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
       (function () {
         emailjs.init({
-          publicKey: "ksxfLYUawU_orS-sm",
+          publicKey: "ksxfLYUawU_orS-sm", // replace with your public key
         });
       })();
     </script>
   </head>
   <body class="cont">
+    <!-- HEADER SECTION -->
     <header id="contact-home" class="roboto">
       <nav>
         <div class="logo">
-          <h1>
-            <em>NEC<span>GLOWS.</span></em>
-          </h1>
+          <h1><em>NEC<span>GLOWS.</span></em></h1>
         </div>
-
         <ul class="view">
           <li><a href="#">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a class="active" href="contact.html">Contact</a></li>
         </ul>
-
         <div class="nav_btn">
           <button>Get Quote</button>
         </div>
@@ -61,54 +44,42 @@
         <div class="left">
           <h3><span>//</span>CONTACT US</h3>
           <h1>Ready to help and guide you.</h1>
-          <p>
-            We are always here to guide and support you with expert advice and
-            friendly service.
-          </p>
+          <p>We are always here to guide and support you with expert advice and friendly service.</p>
         </div>
-
         <div class="right">
           <img draggable="false" src="/img/hero.png" alt="hero img" />
         </div>
       </div>
     </header>
 
+    <!-- CONTACT FORM SECTION -->
     <main>
       <section class="contact_form roboto">
         <div class="left">
-          <form>
-            <label>Your Name *</label><br />
-            <input id="full_name" name="Name" type="text" /><br />
+          <form id="contact-form">
+            <label for="name">Your Name *</label><br />
+            <input id="name" name="from_name" type="text" required /><br />
 
-            <label>Your Email *</label><br />
-            <input name="Email" id="email_id" type="text" /><br />
+            <label for="email_id">Your Email *</label><br />
+            <input id="email_id" name="email_id" type="email" required /><br />
 
-            <label>Services you are looking for *</label><br />
-            <input id="services" name="Services" type="text" /><br />
+            <label for="services">Services you are looking for *</label><br />
+            <input id="services" name="services" type="text" required /><br />
 
-            <label>Your Message</label><br />
-            <textarea id="message" name="Message"></textarea>
+            <label for="message">Your Message</label><br />
+            <textarea id="message" name="message" required></textarea><br />
 
-            <button onclick=" sendEmail(event) " type="submit">Submit</button>
+            <button type="submit">Submit</button>
           </form>
         </div>
 
         <div class="right">
-          <h1>
-            We’ve received your request expect a response within 1–2 business
-            days.
-          </h1>
-          <img
-            class="person"
-            draggable="false"
-            src="/img/big-boy.jpg"
-            alt=""
-            height="700vh"
-            width="500vw"
-          />
+          <h1>We’ve received your request. Expect a response within 1–2 business days.</h1>
+          <img class="person" draggable="false" src="/img/big-boy.jpg" alt="person image" height="700vh" width="500vw" />
         </div>
       </section>
 
+      <!-- CONTACT INFO SECTION -->
       <section class="roboto nice">
         <div id="more_ways">
           <div class="top">
@@ -119,36 +90,27 @@
           <div class="bottom">
             <div class="buttom_left">
               <div class="bottom-left_container">
-                <div class="ispan">
-                  <i class="ri-map-pin-fill"></i>
-                </div>
+                <div class="ispan"><i class="ri-map-pin-fill"></i></div>
                 <span>
                   <h1>Location</h1>
-                  <p>Douflas Owerri, Imo state</p>
+                  <p>Douglas Owerri, Imo State</p>
                 </span>
               </div>
             </div>
 
             <div class="buttom_left">
               <div class="bottom-left_container">
-                <div class="ispan">
-                  <i class="ri-mail-fill"></i>
-                </div>
+                <div class="ispan"><i class="ri-mail-fill"></i></div>
                 <span>
                   <h1>Email</h1>
-                  <p>
-                    necglobalwallsolution <br />
-                    @gmail.com
-                  </p>
+                  <p>necglobalwallsolution@gmail.com</p>
                 </span>
               </div>
             </div>
 
             <div class="buttom_left">
               <div class="bottom-left_container">
-                <div class="ispan">
-                  <i class="ri-phone-fill"></i>
-                </div>
+                <div class="ispan"><i class="ri-phone-fill"></i></div>
                 <span>
                   <h1>Contact</h1>
                   <p>+2348121743722</p>
@@ -159,27 +121,21 @@
         </div>
       </section>
 
+      <!-- CTA SECTION -->
       <section class="roboto foot-hero">
         <div class="footer_hero">
           <i class="ri-paint-brush-fill"></i>
-
-          <h1>
-            Looking to Revitalize Your Home with a <br />
-            Fresh Paint Job?
-          </h1>
-
-          <button>
-            Get Free Quote <span><i class="ri-arrow-right-wide-fill"></i></span>
-          </button>
+          <h1>Looking to Revitalize Your Home with a <br />Fresh Paint Job?</h1>
+          <button>Get Free Quote <span><i class="ri-arrow-right-wide-fill"></i></span></button>
         </div>
       </section>
     </main>
 
+    <!-- FOOTER -->
     <footer class="roboto" id="exa">
       <section>
         <div class="foot1">
           <img class="logo" src="/img/header-logo.svg" alt="logo" />
-
           <ul>
             <li><a href="main.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -188,61 +144,55 @@
           </ul>
 
           <div class="foot_contact">
-            <li>
-              <a href="#"><i class="ri-instagram-line"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-facebook-fill"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-linkedin-fill"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-twitter-x-line"></i></a>
-            </li>
+            <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+            <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+            <li><a href="#"><i class="ri-linkedin-fill"></i></a></li>
+            <li><a href="#"><i class="ri-twitter-x-line"></i></a></li>
           </div>
         </div>
       </section>
       <hr />
-
       <section>
         <div class="foot2">
-          <h3>&copy Copyright 2025 Home Painting</h3>
-
+          <h3>&copy; Copyright 2025 Home Painting</h3>
           <a href="#contact-home"><i class="ri-arrow-up-s-line"></i></a>
         </div>
       </section>
     </footer>
+
+    <!-- EMAILJS SCRIPT -->
     <script>
-      function sendEmail(event) {
+      document.getElementById("contact-form").addEventListener("submit", function (event) {
         event.preventDefault();
 
-        let params = {
-          from_name: document.getElementById("full_name").value,
-          email_id: document.getElementById("email_id").value,
-          message: document.getElementById("message").value,
-          services: document.getElementById("services").value,
-        };
+        const from_name = document.getElementById("name").value.trim();
+        const email_id = document.getElementById("email_id").value.trim();
+        const services = document.getElementById("services").value.trim();
+        const message = document.getElementById("message").value.trim();
 
-        if (
-          !params.from_name ||
-          !params.email_id ||
-          !params.message ||
-          !params.services
-        ) {
+        if (!from_name || !email_id || !services || !message) {
           alert("Please fill all required fields.");
           return;
         }
 
-        emailjs
-          .send("service_a8bar4u", "template_519z0hf", params)
-          .then(function (res) {
-            alert("Email sent successfully! Status: " + res.status);
+        const params = {
+          full_name: from_name,
+          name: from_name,
+          email_id,
+          services,
+          message,
+        };
+
+        emailjs.send("service_a8bar4u", "template_519z0hf", params)
+          .then((res) => {
+            alert("✅ Email sent successfully! Status: " + res.status);
+            document.getElementById("contact-form").reset();
           })
-          .catch(function (err) {
-            alert("Failed to send email: " + JSON.stringify(err));
+          .catch((err) => {
+            console.error("❌ Error:", err);
+            alert("Failed to send email. Please try again later.");
           });
-      }
+      });
     </script>
   </body>
 </html>
