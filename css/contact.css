@@ -104,6 +104,7 @@ color: blue;
     justify-content: center;
     gap: 50px;
     padding: 100px;
+    
 }
 
 #hero .left{
@@ -162,7 +163,7 @@ color: blue;
 }
 
 form{
-  padding: 40px;
+  padding: 30px;
 }
 
 .left form{
@@ -200,6 +201,11 @@ top: 20px;
 .left form button:hover{
   background-color: #cf2e2e;
   cursor: pointer;
+}
+
+
+.cont {
+  overflow-x: hidden;
 }
 
 .right{

@@ -18,6 +18,7 @@
 /* From Uiverse.io by Nawsome */ 
 .loader {
   position: relative;
+  bottom: 50px;
   width: 75px;
   height: 100px;
 }
