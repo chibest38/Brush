@@ -179,7 +179,7 @@ color: blue;
   position: relative;
   width: 16vw;
   bottom: 70px;
-  left: 330px;
+  left: 300px;
   border-radius: 10px;
 }
 
@@ -671,7 +671,7 @@ flex-direction: column-reverse;
 
 .about-left img {
     border-radius: 30px;
-    width:100vw;
+    width:95vw;
     padding: 10px;
 }
 
