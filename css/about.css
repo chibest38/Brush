@@ -9,8 +9,8 @@
   font-variation-settings: "wdth" 100;
 }
 
-body {
-  /* background-color: rgba(255, 255, 255, 0.638); */
+button {
+  cursor: pointer;
 }
 
 html {
@@ -299,6 +299,7 @@ nav ul li a:hover {
 
 .good i {
   background-color: #031538;
+  cursor: pointer;
   color: #e7194f;
   border-radius: 10px;
 }
